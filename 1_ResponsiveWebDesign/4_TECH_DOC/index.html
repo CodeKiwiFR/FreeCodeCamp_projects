@@ -3,12 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITLE</title>
+    <title>Github Documentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
-    
-    <h1>Hello</h1>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="content">
+        <div id="menu-button">
+            <div id="bar"></div>
+            <div id="bar"></div>
+            <div id="bar"></div>
+        </div>
+        <nav id="navbar">
+            <header id="nav-header"></header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#What_is_Markdown?" class="nav-link">What is Markdown?</a>
+            <a href="#Examples" class="nav-link">Examples</a>
+            <a href="#Syntax_guide" class="nav-link">Syntax guide</a>
+            <a href="#GitHub_Flavored_Markdown" class="nav-link">GitHub Flavored Markdown</a>
+            <a href="#Emoji" class="nav-link">Emoji</a>
+        </nav>
+        
+
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header class="section-header">
+                    <h2>Introduction</h2>
+                </header>
+                <p id="section-p">
+                    Markdown is a lightweight and easy-to-use syntax for styling all 
+                    forms of writing on the GitHub platform.<br>
+                    What you will learn:
+                    <ul>
+                        <li>How the Markdown format makes styled collaborative editing easy</li>
+                        <li>How Markdown differs from traditional formatting approaches</li>
+                        <li>How to use Markdown to format text</li>
+                        <li>How to leverage GitHub’s automatic Markdown rendering</li>
+                        <li>How to apply GitHub’s unique Markdown extensions</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section" id="What_is_Markdown?">
+                <header class="section-header">
+                    <h2>What is Markdown?</h2>
+                </header>
+                <p id="section-p">
+                    Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
+                    You can use Markdown most places around GitHub:
+                    <ul>
+                        <li>Gists</li>
+                        <li>Comments in Issues and Pull Requests</li>
+                        <li>Files with the .md or .markdown extension</li>
+                    </ul>
+                    For more information, see “Writing on GitHub” in the GitHub Help.
+                </p>
+            </section>
+            <section class="main-section" id="Examples">
+                <header class="section-header">
+                    <h2>Examples</h2>
+                </header>
+
+                <h3>Text</h3>
+                <code>
+                    It's very easy to make some words **bold** and other 
+                    words *italic* with Markdown. You can even [link to 
+                    Google!](http://google.com)
+                </code>
+                <p>
+                    It's very easy to make some words bold and other words 
+                    italic with Markdown. You can even link to Google!
+                </p>
+
+                <h3>Lists</h3>
+                <code>
+                    Sometimes you want numbered lists:<br>
+                    1. One<br>
+                    2. Two<br>
+                    3. Three<br>
+                    Sometimes you want bullet points:<br>
+                    * Start a line with a star<br>
+                    * Profit!<br>
+                    Alternatively,<br>
+                    - Dashes work just as well<br>
+                    - And if you have sub points, put two spaces before the dash or star:<br>
+                    - Like this<br>
+                    - And this<br>
+                </code>
+                <p>
+                    Sometimes you want numbered lists:<br>
+                    One<br>
+                    Two<br>
+                    Three<br>
+                    Sometimes you want bullet points:<br>
+                    Start a line with a star<br>
+                    Profit!<br>
+                    Alternatively,<br>
+                    Dashes work just as well<br>
+                    And if you have sub points, put two spaces before the dash or star:<br>
+                    Like this<br>
+                    And this<br>
+                </p>
+                <h3>Headers and Quotes</h3>
+                <code>
+                    # Structured documents
+                    Sometimes it's useful to have different levels of 
+                    headings to structure your documents. Start lines 
+                    with a `#` to create headings. Multiple `##` in a 
+                    row denote smaller heading sizes.<br>
+                    ### This is a third-tier heading<br>
+                    You can use one `#` all the way up to `######` six for different heading sizes.<br>
+                    If you'd like to quote someone, use the > character before the line:<br>
+                    > Coffee. The finest organic suspension ever devised... I beat the Borg with it.<br>
+                    > - Captain Janeway<br>
+                </code>
+                <p>
+                    Structured documents
+                    Sometimes it’s useful to have different levels of headings to structure your documents. Start lines with a # to create headings. Multiple ## in a row denote smaller heading sizes.<br>
+                    This is a third-tier heading<br>
+                    You can use one # all the way up to ###### six for different heading sizes.<br>
+                    If you’d like to quote someone, use the > character before the line:<br>
+                    Coffee. The finest organic suspension ever devised… I beat the Borg with it. - Captain Janeway<br>
+                </p>
+            </section>
+            <section class="main-section" id="Syntax_guide">
+                <header class="section-header">
+                    <h2>Syntax guide</h2>
+                </header>
+                <p id="section-p">
+                    <p>Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.</p>
+                    <h3>Headers</h3>
+                    <code>
+                        # This is an &lt;h1&gt tag<br>
+                        ## This is an &lt;h2&gt tag<br>
+                        ###### This is an &lt;h6&gt tag<br>
+                    </code>
+                    <h3>Emphasis</h3>
+                    <code>
+                        *This text will be italic*<br>
+                        _This will also be italic_<br><br>
+                        **This text will be bold**<br>
+                        __This will also be bold__<br><br>
+                        _You **can** combine them_<br>
+                    </code>
+                </p>
+            </section>
+            <section class="main-section" id="GitHub_Flavored_Markdown">
+                <header class="section-header">
+                    <h2>GitHub Flavored Markdown</h2>
+                </header>
+                <p id="section-p">
+                    GitHub.com uses its own version of the Markdown syntax that 
+                    provides an additional set of useful features, many of which 
+                    make it easier to work with content on GitHub.com.<br>
+                    Note that some features of GitHub Flavored Markdown are only 
+                    available in the descriptions and comments of Issues and Pull 
+                    Requests. These include  @mentions as well as references to 
+                    SHA-1 hashes, Issues, and Pull Requests.<br>
+                    Task Lists are also available in Gist comments and in Gist Markdown files.
+                </p>
+            </section>
+            <section class="main-section" id="Emoji">
+                <header class="section-header">
+                    <h2>Emoji</h2>
+                </header>
+                <p id="section-p">
+                    GitHub supports emoji!<br>
+                    To see a list of every image we support, check out the Emoji Cheat Sheet.<br>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        let opened = false;
+        let button = document.getElementById('menu-button');
+        let nav = document.getElementById('navbar');
+        button.addEventListener('click', () => {
+            if (!opened) {
+                navbar.style.display = 'flex';
+                button.style.left = '230px';
+                button.style.position = 'fixed';
+                opened = true;
+            } else {
+                navbar.style.display = 'none';
+                button.style.left = '10px';
+                opened = false;
+            }
+        })
+    </script>
 </body>
 </html>
