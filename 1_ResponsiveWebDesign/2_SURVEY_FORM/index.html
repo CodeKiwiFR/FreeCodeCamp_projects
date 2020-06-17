@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+        <h1 id="title">Developer Profile</h1>
+        <p id="description">Some information about you and your career</p>
+    </header>
+
+    <form action="#" id="survey-form">
+        <div class="form-element">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-element">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-element">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="number" id="number" min="1" max="120" placeholder="Enter your age">
+        </div>
+        <div class="form-element">
+            <label for="dropdown" id="dropdown-label">Activity</label>
+            <select name="activity" id="dropdown">
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="unemployed">Seeking job opportunities</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <p id="check-label">What are your favourite programming language(s)?</p>
+            <div id="checkboxes">
+                <input type="checkbox" id="js" name="prog" value="js">
+                <label for="js">Javascript</label><br>
+                <input type="checkbox" id="python" name="prog" value="python">
+                <label for=python>Python</label><br>
+                <input type="checkbox" id="php" name="prog" value="php">
+                <label for="php">PHP</label><br>
+                <input type="checkbox" id="go" name="prog" value="go">
+                <label for="go">Golang</label><br>
+                <input type="checkbox" id="java" name="prog" value="java">
+                <label for="java">Java</label><br>
+                <input type="checkbox" id="c" name="prog" value="c">
+                <label for="c">C</label><br>
+                <input type="checkbox" id="cpp" name="prog" value="cpp">
+                <label for="cpp">C++</label><br>
+            </div>
+        </div>
+
+        <div class="form-element">
+            <p id="radio-label">Have you ever been hired for a programming mission?</p>
+            <div id="radio">
+                <input type="radio" id="yes" name="prog" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="prog" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" id="maybe" name="prog" value="maybe">
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" id="malcolm" name="prog" value="malcolm">
+                <label for="malcolm">Can you repeat the question?</label><br>
+            </div>
+        </div>
+
+        <div class="form-element">
+            <label for="more" id="more-label">Anything to say?</label>
+            <textarea name="more" id="more" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-element" id="div-submit">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    margin: 40px 0;
+    align-items: center;
+    font-family: courier, sans-serif, sans-serif;
+    background-color: darkturquoise;
+}
+
+body, #header, #survey-form, .form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#header h1 {
+    margin-bottom: 5px;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+#header p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#survey-form {
+    align-items: center;
+    width: 60%;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 75, 0.6);
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    box-shadow: 5px 5px 15px  rgb(0, 0, 75);
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #check-label, #radio-label, #more-label {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-bottom: 3px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    height: 2em;
+    font-size: 0.8em;
+    padding: 0 15px;
+    font-family: courier, sans-serif, sans-serif;
+    border-radius: 5px;
+}
+
+textarea {
+    font-size: 0.8em;
+    padding: 5px 15px;
+    font-family: courier, sans-serif, sans-serif;
+    border-radius: 5px;
+}
+
+.form-element {
+    width: 80%;
+    margin: 5px 0;
+}
+
+#div-submit {
+    align-items: center;
+}
+
+#submit {
+    width: 200px;
+    height: 2.5em;
+    margin-top: 10px;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    font-family: courier, sans-serif, sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    animation-name: button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    box-shadow: 2px 2px 15px darkturquoise;
+    box-shadow: -2px -2px 15px darkturquoise;
+}
+
+@keyframes button {
+    50% {
+        color: white;
+        background-color: darkturquoise;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header h1 {
+        font-size: 2em;
+    }
+
+    #header p {
+        overflow-wrap: anywhere;
+    }
+
+    #submit {
+        width: 100px;
+        height: 2em;
+        margin-top: 5px;
+        font-size: 1em;
+    }
+}
